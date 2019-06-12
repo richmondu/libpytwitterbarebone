@@ -42,6 +42,19 @@ Sample request packet:
     status=asdasdasd%20asdasdasd&trim_user=1
 
 
+    Breakdown:
+    1. Message: "asdasdasd asdasdasd"
+    2. Signature base string:
+       POST&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fupdate.json&oauth_consumer
+       _key%3DAWpC4F23xG33siMsPZR2JX3Jp%26oauth_nonce%3D704004537824812392248604814340%
+       26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1560332973%26oauth_toke
+       n%3D46786209-AY4py6wN5OAAdEHYMOifVfJvGXX45K2Kkbgw143qR%26oauth_version%3D1.0%26s
+       tatus%3Dasdasdasd%2520asdasdasd%26trim_user%3D1
+    3. HMAC-SHA1 signature: ba89dd8e54ba44f95c54d96fd396066864e7e5b4
+    4. Base64 signature: uondjlS6RPlcVNlv05YGaGTn5bQ=
+    5. OAuth Signature: uondjlS6RPlcVNlv05YGaGTn5bQ%3D
+
+
 References:
 
 https://developer.twitter.com/en/docs/basics/authentication/guides/authorizing-a-request
