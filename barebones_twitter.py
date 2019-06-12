@@ -173,17 +173,18 @@ class barebones_twitter:
 
 
 def tweet(message):
+    result = False
+
     handle = barebones_twitter()
     request = handle.createRequestUpdate(message)
     if handle.connect(CONFIG_TLS_CACERTIFICATE):
         if handle.send(request):
             if handle.recv():
-                print("Tweet sent successfully! [{}] [{}]".format(len(message), message))
-                handle.close()
-                return True
+                result = True
         handle.close()
-    print("Tweet failed! [{}] [{}]".format(len(message), message))
-    return False
+
+    print("Tweet sent {}! [{}] [{}]".format("successfully" if result else "failed", len(message), message))
+    return result
 
 
 def main(args):
