@@ -8,12 +8,12 @@ It is useful for people who want to know how to implement Twitter connectivity f
 without using Twitter libraries, such as the Python python-twitter library.
 
 
-Supported Twitter features:
+### Supported Twitter features:
 
     1. Posting a tweet
 
 
-Instructions:
+### Instructions:
 
     1. Create a Twitter developer account at https://developer.twitter.com
     2. Create an app.
@@ -27,7 +27,7 @@ Instructions:
     4. Update twitter_credentials.py
 
 
-Sample request packet:
+### Sample request packet:
 
     POST /1.1/statuses/update.json HTTP/1.1
     Connection:close
@@ -55,6 +55,6 @@ Sample request packet:
     5. OAuth Signature: uondjlS6RPlcVNlv05YGaGTn5bQ%3D
 
 
-References:
+### References:
 
 https://developer.twitter.com/en/docs/basics/authentication/guides/authorizing-a-request
