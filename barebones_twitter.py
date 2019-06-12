@@ -49,7 +49,6 @@ class barebones_twitter:
     def generateSigningKey(self):
         signingkey = CONFIG_TWITTER_CONSUMER_SECRET_KEY + '&' + CONFIG_TWITTER_ACCESS_SECRET
         print("\r\nsigning key:\r\n{}\r\n".format(signingkey))
-        
         return signingkey
 
     def percentEncode(self, data):
@@ -124,6 +123,8 @@ class barebones_twitter:
 
     def connect(self, ca_file):
         context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+        context.set_ciphers('AES256-SHA,AES128-SHA')
+        #print(context.get_ciphers())
         context.load_verify_locations(ca_file)
         self.session = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.session = context.wrap_socket(self.session, server_hostname=CONFIG_HOST)
