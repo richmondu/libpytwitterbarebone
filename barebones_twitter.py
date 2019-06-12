@@ -23,7 +23,6 @@ CONFIG_TWITTER_CONSUMER_SECRET_KEY = twitter_credentials.CONSUMER_SECRET_KEY
 CONFIG_TWITTER_ACCESS_TOKEN        = twitter_credentials.ACCESS_TOKEN
 CONFIG_TWITTER_ACCESS_SECRET       = twitter_credentials.ACCESS_SECRET
 ###############################################################################
-
 CONFIG_HTTP_METHOD          = 'POST'
 CONFIG_HTTP_API             = '/1.1/statuses/update.json'
 CONFIG_HTTP_VERSION         = 'HTTP/1.1'
@@ -33,11 +32,9 @@ CONFIG_HTTP_CONTENT_TYPE    = 'application/x-www-form-urlencoded'
 CONFIG_HTTP_AUTHORIZATION   = 'OAuth'
 CONFIG_HTTP_OAUTH_ALGORITHM = 'HMAC-SHA1'
 CONFIG_HTTP_OAUTH_VERSION   = '1.0'
-
 CONFIG_HOST                 = 'api.twitter.com'
 CONFIG_PORT                 = 443
 CONFIG_MAX_RECV_SIZE        = 512
-
 ###############################################################################
 
 
