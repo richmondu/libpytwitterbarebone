@@ -7,6 +7,7 @@ from twitter_credentials import twitter_credentials
 
 import argparse
 import sys
+import logging
 
 
 
