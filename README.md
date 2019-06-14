@@ -4,7 +4,7 @@
 libpytwitterbarebone is a bare bone Python implementation of Twitter connectivity.
 It uses plain sockets and encryption to send HTTP POST packet signed with OAuth signature and sent over secure TLS tunnel.
 
-It is useful for people who want to know how to implement Twitter connectivity from scratch
+It is useful for people who want to know how to implement Twitter connectivity from scratch (ex. for resource-constrained MCU using C)
 without using Twitter libraries, such as the Python python-twitter library.
 
 
